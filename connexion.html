@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Connexion</h2>
+        <form action="connexion.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mot_de_passe">Mot de passe:</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+
+            <button type="submit">Se connecter</button>
+        </form>
+        <h2>Créer un compte</h2>
+    <form action="inscription.php" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mot_de_passe">Mot de passe :</label>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+
+        <!-- Le type sera défini par défaut comme 'utilisateur' -->
+        <input type="hidden" name="type" value="utilisateur">
+
+        <button type="submit">Créer un compte</button>
+    </form>
+    </div>
+</body>
+</html>
